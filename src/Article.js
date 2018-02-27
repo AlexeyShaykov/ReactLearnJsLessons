@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Comment from './Comment';
+import CommentList from './CommentList';
 
 export default class Article extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ export default class Article extends Component {
           {isOpen ? 'close' : 'open'}
         </button>
         {this.getSection()}
-        <Comment commentIds={article.comments} />
+        <CommentList commentIds={article.comments} />
       </div>
     )
   }
