@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
-import {normalizedComments} from './fixtures';
+import {normalizedComments} from '../fixtures';
 import Comment from './Comment';
 
 export default class CommentList extends Component {
+  static defaultProps = {
+
+  }
   constructor(props) {
     super(props);
 
